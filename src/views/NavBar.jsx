@@ -32,13 +32,13 @@ const NavBar =() =>{
     ];
     return(
         <div className="navigation-main-frame">
-            <div className="logo-frame">
+            <div className="tcc-logo-frame">
                 <img src={TCCLOGO}/>
             </div>
             <div>
-                <ul className="nav-link">
+                <ul className="tcc-nav-link">
                     {links.map((link) => (
-                        <li key={link.name} className="nav-link-detail">
+                        <li key={link.name} className="tcc-nav-link-detail">
                             <a href={link.link}>{link.name}</a>
                         </li>
                     ))}
