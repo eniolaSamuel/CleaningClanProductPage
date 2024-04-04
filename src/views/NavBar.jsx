@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/NavBar.css"
+import TCCLOGO from "../assets/svg/tccLogo.svg"
 
 const NavBar =() =>{
 
@@ -31,7 +32,18 @@ const NavBar =() =>{
     ];
     return(
         <div className="navigation-main-frame">
-
+            <div className="logo-frame">
+                <img src={TCCLOGO}/>
+            </div>
+            <div>
+                <ul className="nav-link">
+                    {links.map((link) => (
+                        <li key={link.name} className="nav-link-detail">
+                            <a href={link.link}>{link.name}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
