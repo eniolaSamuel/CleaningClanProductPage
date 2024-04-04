@@ -1,0 +1,82 @@
+.navigation-main-frame{
+    display: flex;
+    border: 1px solid #0e0e0e;
+}
+.tcc-logo-frame img{
+    margin-left: 95px;
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.tcc-nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: #100c08;
+    text-decoration-color: #100c08;
+    margin-right: 150px;
+}
+
+.tcc-nav-link-detail{
+    text-decoration-style: solid;
+    font-size: medium;
+    font-weight: normal;
+    justify-content: space-between;
+    position: relative;
+    display: inline-block;
+    list-style:none;
+    margin-left:35px;
+    margin-top: 18px;
+    transition:0.5s;
+}
+
+.tcc-nav-link-detail a{
+    color:#100c08;
+    text-decoration: none;
+    display: block;
+    position:relative;
+    padding:5px;
+    font-size:15px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    transition:0.5s;
+}
+
+.tcc-nav-link-detail:hover a{
+    transform:scale(1.2);
+    opacity:0.2;
+    filter:blur(5px);
+}
+
+.tcc-nav-link-detail a:hover{
+    transform:scale(1.5);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color: #CABFB3;
+}
+
+.tcc-nav-link-detail a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#c5a081;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1
+}
+
+.tcc-nav-link-detail a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+}

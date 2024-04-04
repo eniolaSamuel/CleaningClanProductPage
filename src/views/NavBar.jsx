@@ -33,7 +33,7 @@ const NavBar =() =>{
     return(
         <div className="navigation-main-frame">
             <div className="tcc-logo-frame">
-                <img src={TCCLOGO}/>
+                <img src={TCCLOGO} alt={TCCLOGO}/>
             </div>
             <div>
                 <ul className="tcc-nav-link">
@@ -47,3 +47,5 @@ const NavBar =() =>{
         </div>
     )
 }
+
+export default NavBar;
