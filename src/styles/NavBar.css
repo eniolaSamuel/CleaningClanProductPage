@@ -1,6 +1,6 @@
 .navigation-main-frame{
     display: flex;
-    border: 1px solid #0e0e0e;
+    border: 1px solid #9e1276;
 }
 .tcc-logo-frame img{
     margin-left: 95px;
@@ -17,8 +17,8 @@
     margin-bottom: 5px;
     list-style: none;
     text-decoration: none;
-    color: #100c08;
-    text-decoration-color: #100c08;
+    color: #5a225f;
+    text-decoration-color: #5a225f;
     margin-right: 150px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .tcc-nav-link-detail a{
-    color:#100c08;
+    color:#5a225f;
     text-decoration: none;
     display: block;
     position:relative;
@@ -68,7 +68,7 @@
     left:0;
     width:100%;
     height:100%;
-    background:#c5a081;
+    background:#83b5d1;
     transition:0.5s;
     transform-origin:right;
     transform:scaleX(0);
