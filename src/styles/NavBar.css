@@ -31,7 +31,7 @@
     display: inline-block;
     list-style:none;
     margin-left:35px;
-    margin-top: 18px;
+    margin-top: 8px;
     transition:0.5s;
 }
 
@@ -58,7 +58,7 @@
     opacity:1;
     filter:blur(0);
     text-decoration:none;
-    color: #CABFB3;
+    color: #9e1276;
 }
 
 .tcc-nav-link-detail a:before{
@@ -68,7 +68,7 @@
     left:0;
     width:100%;
     height:100%;
-    background:#83b5d1;
+    background:#FFFF;
     transition:0.5s;
     transform-origin:right;
     transform:scaleX(0);
