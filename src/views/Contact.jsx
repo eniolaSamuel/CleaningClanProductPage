@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ContactUs.css"
 import Mail from "../assets/svg/icons8-send-mail.svg"
-import CellPhone from "../assets/image/svg/icons8-cell-phone.svg"
+import CellPhone from "../assets/svg/icons8-cell-phone.svg"
 import Location from "../assets/image/svg/icons8-location.svg"
 
 export const ContactUs = () => {
