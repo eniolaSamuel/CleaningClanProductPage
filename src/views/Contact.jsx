@@ -19,7 +19,7 @@ export const ContactUs = () => {
                     <div> <img src={CellPhone} alt={CellPhone}/></div>
                     <div>
                         <h1>Phone Number</h1>
-                        <p>+234 708 077 2782</p>
+                        <p>+234 802 314 2786</p>
                     </div>
                 </div>
                 <div className="contact-frame">
