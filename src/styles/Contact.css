@@ -4,7 +4,7 @@
     padding-top: 100px;
 }
 .contact-sub-frame{
-    border: 1px solid #2E210F;
+    border: 1px solid #5a225f;
     width: 90%;
     height: 500px;
     justify-content: space-evenly;
@@ -36,6 +36,6 @@
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0em;
-    color: #2E210F;
+    color: #5a225f;
     text-align: left;
 }
