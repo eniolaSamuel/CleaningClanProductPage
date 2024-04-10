@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/ContactUs.css"
-import Mail from "../assets/image/svg/icons8-send-mail.svg"
+import Mail from "../assets/svg/icons8-send-mail.svg"
 import CellPhone from "../assets/image/svg/icons8-cell-phone.svg"
 import Location from "../assets/image/svg/icons8-location.svg"
 
@@ -12,7 +12,7 @@ export const ContactUs = () => {
                     <div> <img src={Mail} alt={Mail}/></div>
                     <div>
                         <h1>Email</h1>
-                        <p>cocoalate00@gmail.com</p>
+                        <p>dblsamuel@yahoo.com</p>
                     </div>
                 </div>
                 <div className="contact-frame">
