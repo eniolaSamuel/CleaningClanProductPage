@@ -5,8 +5,7 @@ import {ContactUs} from "./Contact";
 const HomePage = () =>{
     return(
         <div>
-            <NavBar />
-            <ContactUs />
+
         </div>
     )
 }
