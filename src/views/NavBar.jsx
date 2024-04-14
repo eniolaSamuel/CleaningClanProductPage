@@ -27,7 +27,7 @@ const NavBar =() =>{
         { name: "Services", link: "/" },
         { name: "About Us", link: "/" },
         { name: "Testimonials", link: "/" },
-        { name: "Contact Us", link: "/" },
+        { name: "Contact Us", link: "//contactUs" },
         { name: "FAQs", link: "/" },
     ];
     return(
