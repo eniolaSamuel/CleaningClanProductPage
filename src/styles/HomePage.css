@@ -1,0 +1,10 @@
+.home-page-main-frame{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    background-image:
+            linear-gradient(to bottom, rgba(246, 246, 246, 0.45), rgba(255, 255, 255, 0.42)),
+            url('../assets/svg/purple-pink-backdrop.svg');
+
+}
