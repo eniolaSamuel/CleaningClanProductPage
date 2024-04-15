@@ -5,8 +5,8 @@ import {ContactUs} from "./Contact";
 const HomePage = () =>{
     return(
         <div className="home-page-main-frame">
-            <div></div>
-            <div></div>
+            <div className="text-frame"></div>
+            <div className="side-image"></div>
 
         </div>
     )
