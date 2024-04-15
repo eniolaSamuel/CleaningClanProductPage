@@ -4,7 +4,7 @@ import {ContactUs} from "./Contact";
 
 const HomePage = () =>{
     return(
-        <div>
+        <div className="home-page-main-frame">
 
         </div>
     )
