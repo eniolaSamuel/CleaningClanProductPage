@@ -6,7 +6,10 @@ import {ContactUs} from "./Contact";
 const HomePage = () =>{
     return(
         <div className="home-page-main-frame">
-            <div className="text-frame"></div>
+            <div className="text-frame">
+                <h1>Welcome to The Cleaning Clan!</h1>
+                <p></p>
+            </div>
             <div className="side-image">
                 <img src={CLEANINGPERSONS} alt={CLEANINGPERSONS}/>
             </div>
