@@ -8,3 +8,19 @@
             url('../assets/svg/purple-pink-backdrop.svg');
 
 }
+
+.text-frame{
+
+}
+
+.text-frame h1{
+    width: 600px;
+    height: 24px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 20px;
+}
