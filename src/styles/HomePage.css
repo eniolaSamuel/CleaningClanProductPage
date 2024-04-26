@@ -10,12 +10,16 @@
 }
 
 .text-frame{
-    margin: auto;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 70px;
+
 }
 
 .text-frame h1{
     width: 600px;
-    height: 24px;
+    height: 104px;
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
@@ -33,6 +37,5 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(0, 0, 0, 0.55);
-    margin-top: 150px;
     font-family: "Varela Round", sans-serif;
 }
