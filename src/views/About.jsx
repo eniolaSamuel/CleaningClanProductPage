@@ -1,6 +1,8 @@
 const About = () => {
     return(
-        <div className="about-main-frame"></div>
+        <div className="about-main-frame">
+            <div></div>
+        </div>
     )
 }
 
