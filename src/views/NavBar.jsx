@@ -35,7 +35,7 @@ const NavBar =() =>{
             <div className="tcc-logo-frame">
                 <img src={TCCLOGO} alt={TCCLOGO}/>
             </div>
-            <div>
+            <div className="tcc-nav-link-frame">
                 <ul className="tcc-nav-link">
                     {links.map((link) => (
                         <li key={link.name} className="tcc-nav-link-detail">
@@ -43,6 +43,11 @@ const NavBar =() =>{
                         </li>
                     ))}
                 </ul>
+            </div>
+            <div>
+                <button className="tcc-contact-button">
+                    CONTACT US
+                </button>
             </div>
         </div>
     )
