@@ -5,7 +5,11 @@ const ServicePage = () => {
                 <h1>Expert Cleaning Solutions for Sparkling, Spotless Spaces</h1>
             </div>
             <div>
-
+                <div className="general-h-cleaning"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div></div>
         </div>
