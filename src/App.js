@@ -4,6 +4,7 @@ import HomePage from "./views/HomePage";
 import {ContactUs} from "./views/Contact";
 import ProductLandingPage from "./views/ProductLandingPage";
 import About from "./views/About";
+import ServicePage from "./views/ServicePage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/home-page" element={<HomePage/>} />
             <Route path="/contactUs" element={<ContactUs />} />
             <Route path="/aboutUs" element={<About />} />
+            <Route path="/service" element={<ServicePage />} />
           </Routes>
         </BrowserRouter>
       </>

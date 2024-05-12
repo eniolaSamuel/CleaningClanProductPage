@@ -1,0 +1,70 @@
+.service-main-frame{
+    width: 100%;
+}
+.bubble-container {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    border: 2px solid #ccc;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px; /* Adjust padding as needed */
+}
+
+.individual-bubble {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #e6a5ec; /* Light blue color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+
+}
+
+.individual-bubble span{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.individual-bubble span:nth-child(1){
+    inset: 10px;
+    border-left: 15px solid #5a225f;
+    filter: blur(8px);
+}
+
+.individual-bubble span:nth-child(2){
+    inset: 10px;
+    border-left: 15px solid #9e1276;
+    filter: blur(8px);
+}
+.individual-bubble span:nth-child(3){
+    inset: 10px;
+    border-top: 15px solid #9e1276;
+    filter: blur(8px);
+}
+
+.individual-bubble:hover {
+    background-color: #2d1231; /* Darker blue color on hover */
+}
+
+.individual-bubble p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White text color */
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.individual-bubble:hover p {
+    opacity: 1;
+}
