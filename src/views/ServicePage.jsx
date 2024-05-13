@@ -35,30 +35,55 @@ const ServicePage = () => {
                     <span></span>
                     <span></span>
                     <span></span>
+                    <span></span>
                     {showText && <p>One - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Two</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Two - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Three</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Three - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Four</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Four - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Five</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Five - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Six</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Six - Some additional information</p>}
                 </div>
                 <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span>Seven</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {showText && <p>Seven - Some additional information</p>}
                 </div>
             </div>
