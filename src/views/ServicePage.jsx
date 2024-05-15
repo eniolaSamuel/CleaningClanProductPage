@@ -29,62 +29,69 @@ const ServicePage = () => {
 
     return (
         <div className="service-page-container">
-            <div className="bubble-container">
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>One - Some additional information</p>}
+
+
+            <div className="service-container">
+                <div className="services-text">
+                    <h1>Try Popping soap bubbles to reveal our amazing services</h1>
                 </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Two - Some additional information</p>}
-                </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Three - Some additional information</p>}
-                </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Four - Some additional information</p>}
-                </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Five - Some additional information</p>}
-                </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Six - Some additional information</p>}
-                </div>
-                <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    {showText && <p>Seven - Some additional information</p>}
+                <div className="bubble-container">
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>One - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Two - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Three - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Four - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Five - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Six - Some additional information</p>}
+                    </div>
+                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        {showText && <p>Seven - Some additional information</p>}
+                    </div>
                 </div>
             </div>
         </div>
