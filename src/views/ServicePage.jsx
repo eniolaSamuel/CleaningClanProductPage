@@ -42,7 +42,7 @@ const ServicePage = () => {
                         <span></span>
                         <span></span>
                         <span></span>
-                        {showText && <p>One - Some additional information</p>}
+                        {showText && <p>HOUSE CLEANMING</p>}
                     </div>
                     <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
                         <span></span>
