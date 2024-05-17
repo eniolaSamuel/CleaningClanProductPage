@@ -28,17 +28,35 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
-    animation: animate 8s ease-in-out infinite;
+    animation: bounce 2s infinite alternate;
 }
 
-@keyframes animate{
-    0%, 100%{
-        transform: translateY(-20px);
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Shadow effect */
     }
-    50%{
-        transform: translateY(-20px);
+    50% {
+        transform: translateY(-10px); /* Adjust the bounce height as needed */
+        filter: none; /* Remove shadow */
+    }
+    100% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Shadow effect */
     }
 }
+
+/* Adjust animation duration for each bubble */
+.individual-bubble:nth-child(odd) {
+    animation-duration: 3s; /* Adjust duration for odd bubbles */
+}
+
+.individual-bubble:nth-child(even) {
+    animation-duration: 4s; /* Adjust duration for even bubbles */
+}
+
+
 
 .individual-bubble::before{
     content: '';
