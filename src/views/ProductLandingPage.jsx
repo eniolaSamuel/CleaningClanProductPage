@@ -8,8 +8,9 @@ const ProductLandingPage =() =>{
         <div>
             <NavBar />
             <HomePage/>
-            <ContactUs />
             <ServicePage />
+            <ContactUs />
+
         </div>
     )
 }
