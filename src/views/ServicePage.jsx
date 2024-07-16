@@ -16,13 +16,13 @@ const ServicePage = () => {
     };
 
     const services = [
-        { title: "HOUSE CLEANING", content: "Information about house cleaning services." },
-        { title: "POST CONSTRUCTION & MOVE CLEANING", content: "Information about post-construction and move cleaning services." },
-        { title: "DUSTING & VACUUMING", content: "Details about service three." },
-        { title: "DISINFECTION", content: "Details about service four." },
-        { title: "GENERAL SANITATION", content: "Details about service five." },
-        { title: "POWER WASH ", content: "Details about service six." },
-        { title: "Seven - Some additional information", content: "Details about service seven." }
+        { title: "JANITORIAL SERVICE", content: "Information about house cleaning services." },
+        { title: "COMMERCIAL CLEANING", content: "Information about post-construction and move cleaning services." },
+        { title: "DOMESTIC CLEANING", content: "Details about service three." },
+        { title: "INTEGRATED PEST MANAGEMENT", content: "Details about service four." },
+        { title: "DEEP CLEANING", content: "Details about service five." },
+        { title: "SOFA & RUG LAUNDRY", content: "Details about service six." },
+        { title: "EVENT CLEANING", content: "Details about service seven." },
     ];
 
     return (
@@ -46,6 +46,9 @@ const ServicePage = () => {
                             <span></span>
                         </div>
                     ))}
+                </div>
+                <div>
+                    <p>*we also offer Trainings and Consultation*</p>
                 </div>
             </div>
 
