@@ -3,9 +3,10 @@
     height: 89vh;
     background-size: cover;
     display: flex;
-    background-image:
-            linear-gradient(to bottom, rgba(246, 246, 246, 0.45), rgba(255, 255, 255, 0.42)),
-            url('../assets/svg/purple-pink-backdrop.svg');
+    /*background-image:*/
+    /*        linear-gradient(to bottom, rgba(246, 246, 246, 0.45), rgba(255, 255, 255, 0.42)),*/
+    /*        url('../assets/svg/purple-pink-backdrop.svg');*/
+    background-color: #FCFCFC;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

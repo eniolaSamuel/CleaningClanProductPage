@@ -1,101 +1,70 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
 import "../styles/ServicePage.css";
 
+Modal.setAppElement('#root'); // Ensure accessibility
+
 const ServicePage = () => {
-    const numBubbles = 7;
-    const circleRadius = 200; // Adjust the radius of the circle as needed
-    const center = { x: 250, y: 250 }; // Adjust the center position as needed
+    const [activeBubble, setActiveBubble] = useState(null);
 
-    const [showText, setShowText] = useState(false);
-
-    const toggleTextVisibility = () => {
-        setShowText(!showText);
+    const handleBubbleClick = (index) => {
+        setActiveBubble(index);
     };
 
-    const generateRandomPosition = () => {
-        const angle = Math.random() * 2 * Math.PI;
-        const radius = Math.sqrt(Math.random()) * circleRadius;
-        const x = center.x + radius * Math.cos(angle);
-        const y = center.y + radius * Math.sin(angle);
-        return { x, y };
+    const closeModal = () => {
+        setActiveBubble(null);
     };
 
-    const bubbles = Array.from({ length: numBubbles }, (_, index) => ({
-        id: index + 1,
-        position: generateRandomPosition(),
-        label: `${index + 1}`
-    }));
-
+    const services = [
+        { title: "HOUSE CLEANING", content: "Information about house cleaning services." },
+        { title: "POST CONSTRUCTION & MOVE CLEANING", content: "Information about post-construction and move cleaning services." },
+        { title: "DUSTING & VACUUMING", content: "Details about service three." },
+        { title: "DISINFECTION", content: "Details about service four." },
+        { title: "GENERAL SANITATION", content: "Details about service five." },
+        { title: "POWER WASH ", content: "Details about service six." },
+        { title: "Seven - Some additional information", content: "Details about service seven." }
+    ];
 
     return (
         <div className="service-page-container">
-
-
             <div className="service-container">
                 <div className="services-text">
-                    <h1>Try Popping soap bubbles to reveal our amazing services</h1>
+                    <h1>OUR SERVICES</h1>
+                    <p>*click on bubble to reveal our exciting services*</p>
                 </div>
                 <div className="bubble-container">
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>HOUSE CLEANING</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>POST CONSTRUCTION <br/> & <br/> MOVE CLEANING</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>Three - Some additional information</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>Four - Some additional information</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>Five - Some additional information</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>Six - Some additional information</p>}
-                    </div>
-                    <div className="individual-bubble" onMouseEnter={toggleTextVisibility} onMouseLeave={toggleTextVisibility}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        {showText && <p>Seven - Some additional information</p>}
-                    </div>
+                    {services.map((service, index) => (
+                        <div
+                            key={index}
+                            className={`individual-bubble ${activeBubble !== null && activeBubble !== index ? 'blurred' : ''}`}
+                            onClick={() => handleBubbleClick(index)}
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </div>
 
+            <Modal
+                isOpen={activeBubble !== null}
+                onRequestClose={closeModal}
+                contentLabel="Service Information"
+                className="service-modal"
+                overlayClassName="service-modal-overlay"
+            >
+                {activeBubble !== null && (
+                    <div>
+                        <h2>{services[activeBubble].title}</h2>
+                        <p>{services[activeBubble].content}</p>
+                        <button onClick={closeModal}>Close</button>
+                    </div>
+                )}
+            </Modal>
+        </div>
     );
 };
 
