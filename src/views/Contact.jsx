@@ -7,6 +7,7 @@ import Location from "../assets/svg/icons8-location.svg"
 export const ContactUs = () => {
     return(
         <div className="contact-main-frame">
+            <hr/>
             <div className="contact-sub-frame">
                 <div className="contact-frame">
                     <div> <img src={Mail} alt={Mail}/></div>

@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import {ContactUs} from "./Contact";
 import HomePage from "./HomePage";
 import ServicePage from "./ServicePage";
+import About from "./About";
 
 const ProductLandingPage =() =>{
     return(
@@ -9,8 +10,8 @@ const ProductLandingPage =() =>{
             <NavBar />
             <HomePage/>
             <ServicePage />
+            <About />
             <ContactUs />
-
         </div>
     )
 }

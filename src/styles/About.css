@@ -1,0 +1,49 @@
+.about-main-frame{
+    width: 100%;
+    background-image: linear-gradient(#F9F4FB,#F9F4FB);
+    display: flex;
+}
+
+.blob-plusMachine-background-designs{
+    width: 60%;
+    display: flex;
+}
+
+.blob-background-designs{
+    width: 80%;
+    height: 600px;
+    border-bottom-right-radius: 90% 90%;
+    border-top-left-radius: 0% 40%;
+    border-bottom-left-radius: 0% 60%;
+    border-top-right-radius: 70% 40%;
+    background-image: radial-gradient(#fb03b6,#2d0e54);
+}
+
+.blob-background-designs img{
+    width: 80%;
+
+}
+
+.about-text-frame{
+    width: 40%;
+}
+
+.about-text-frame hr{
+    height: 5px;
+    width: 250px;
+    background-image: radial-gradient( #fb03b6,#2d0e54);
+}
+
+.about-text-details-frame h1{
+    height: 55px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}

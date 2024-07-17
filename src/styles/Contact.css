@@ -3,6 +3,13 @@
     height: 600px;
     padding-top: 100px;
 }
+
+.contact-main-frame hr{
+    height: 5px;
+    width: 250px;
+    background-image: radial-gradient( #fb03b6,#2d0e54);
+    margin-bottom: 70px;
+}
 .contact-sub-frame{
     border: 1px solid #9F1578;
     width: 90%;

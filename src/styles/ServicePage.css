@@ -1,16 +1,18 @@
 .service-main-frame {
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .service-container {
     background-image: linear-gradient(#FCFCFC, #F9F4FB);
-    height: 650px;
+    height: 600px;
 }
 
 .service-container hr{
     height: 5px;
     width: 250px;
     background-image: radial-gradient( #fb03b6,#2d0e54);
+    margin-top: -1px;
 }
 
 .bubble-container {
@@ -140,7 +142,7 @@
 }
 
 .services-text {
-    height: 130px;
+    height: 100px;
     padding-top: 30px;
 }
 
@@ -152,7 +154,7 @@
     text-align: center;
     font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
-    background: -webkit-repeating-linear-gradient(#fb03b6, #2d0e54);
+    background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -178,6 +180,7 @@
     background: -webkit-repeating-linear-gradient(#2d0e54 ,#fb03b6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 40pxpx;
 }
 
 .service-modal {
