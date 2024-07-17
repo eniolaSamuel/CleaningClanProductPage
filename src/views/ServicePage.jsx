@@ -28,6 +28,7 @@ const ServicePage = () => {
     return (
         <div className="service-page-container">
             <div className="service-container">
+                <hr/>
                 <div className="services-text">
                     <h1>OUR SERVICES</h1>
                     <p>*click on bubble to reveal our exciting services*</p>
@@ -47,7 +48,7 @@ const ServicePage = () => {
                         </div>
                     ))}
                 </div>
-                <div>
+                <div className="services-clause-text">
                     <p>*we also offer Trainings and Consultation*</p>
                 </div>
             </div>
