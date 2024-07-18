@@ -66,4 +66,10 @@
 
 .side-image{
     margin-top: 80px;
+
+}
+
+.side-image img{
+    width: 450px;
+    height: 450px;
 }
