@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import "../styles/ServicePage.css";
+import CloseIcon from "../../src/assets/svg/icons8-close.svg"
 
 Modal.setAppElement('#root'); // Ensure accessibility
 
@@ -63,9 +64,17 @@ const ServicePage = () => {
             >
                 {activeBubble !== null && (
                     <div>
-                        <h2>{services[activeBubble].title}</h2>
-                        <p>{services[activeBubble].content}</p>
-                        <button onClick={closeModal}>Close</button>
+                        <div>
+                            <button
+                                className="modal-close-button"
+                                onClick={closeModal}>
+                                <img src={CloseIcon} alt={CloseIcon}/>
+                            </button>
+                        </div>
+                        <div>
+                            <h2>{services[activeBubble].title}</h2>
+                            <p>{services[activeBubble].content}</p>
+                        </div>
                     </div>
                 )}
             </Modal>
