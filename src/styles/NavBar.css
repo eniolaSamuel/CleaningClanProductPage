@@ -3,6 +3,12 @@
     border: 1px solid #9e1276;
     margin: auto;
 }
+
+.tcc-logo-frame{
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
 .tcc-logo-frame img{
     margin-left: 75px;
     width: 120px;
@@ -17,6 +23,7 @@
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 40px;
+    width: 50%;
 }
 
 .tcc-nav-link{
@@ -88,6 +95,10 @@
     transition:transform 0.5s;
     transform-origin:left;
     transform:scaleX(1);
+}
+
+.tcc-contact-button-frame{
+    width: 25%;
 }
 .tcc-contact-button{
     color:#5a225f;

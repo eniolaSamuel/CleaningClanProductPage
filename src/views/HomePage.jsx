@@ -19,7 +19,6 @@ const HomePage = () =>{
             <div className="side-image">
                 <img src={CLEANINGPERSONS} alt={CLEANINGPERSONS}/>
             </div>
-
         </div>
     )
 }

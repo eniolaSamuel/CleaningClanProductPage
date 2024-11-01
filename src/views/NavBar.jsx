@@ -44,7 +44,7 @@ const NavBar =() =>{
                     ))}
                 </ul>
             </div>
-            <div>
+            <div className="tcc-contact-button-frame">
                 <button className="tcc-contact-button">
                     CONTACT US
                 </button>
