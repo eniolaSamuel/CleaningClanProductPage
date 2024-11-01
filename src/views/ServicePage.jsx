@@ -23,6 +23,7 @@ const ServicePage = () => {
         { title: "DEEP CLEANING", content: "Details about service five." },
         { title: "SOFA & RUG LAUNDRY", content: "Details about service six." },
         { title: "EVENT CLEANING", content: "Details about service seven." },
+
     ];
 
     return (

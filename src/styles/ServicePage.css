@@ -11,7 +11,6 @@
 .service-container hr{
     height: 5px;
     width: 250px;
-    background-image: radial-gradient( #fb03b6,#2d0e54);
     margin-top: -1px;
 }
 
