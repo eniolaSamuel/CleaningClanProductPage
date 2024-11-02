@@ -6,7 +6,7 @@
 
 .tcc-logo-frame{
     display: flex;
-    width: 25%;
+    width: 15%;
     align-items: center;
 }
 .tcc-logo-frame img{
@@ -23,7 +23,7 @@
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 40px;
-    width: 50%;
+    width: 60%;
 }
 
 .tcc-nav-link{
