@@ -197,7 +197,7 @@
     outline: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-image: url("../assets/svg/serviceBackgound.svg");
-    width: 70%;
+    width: 50%;
     height: 55%;
 }
 
@@ -215,4 +215,9 @@
 
 .blurred {
     filter: blur(20px);
+}
+
+.modal-close-button{
+    right:70% ;
+    margin: auto;
 }
