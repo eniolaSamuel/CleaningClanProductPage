@@ -30,7 +30,6 @@ const ServicePage = () => {
     return (
         <div className="service-page-container">
             <div className="service-container">
-                <hr/>
                 <div className="services-text">
                     <h1>OUR SERVICES</h1>
                     <p>*click on bubble to reveal our exciting services*</p>
