@@ -214,10 +214,11 @@
 }
 
 .blurred {
-    filter: blur(20px);
+    filter: blur(50px);
 }
 
 .modal-close-button{
     right:70% ;
-    margin: auto;
+    margin-bottom: 200px;
+    margin-left: 630px;
 }
