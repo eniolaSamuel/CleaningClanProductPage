@@ -17,13 +17,14 @@ const ServicePage = () => {
     };
 
     const services = [
-        { title: "RESIDENTIAL CLEANING", content: "One off, Weekly, Bi-weekly and Monthly." },
-        { title: "COMMERCIAL CLEANING", content: "Information about post-construction and move cleaning services." },
-        { title: "DOMESTIC CLEANING", content: "Details about service three." },
-        { title: "INTEGRATED PEST MANAGEMENT", content: "Details about service four." },
-        { title: "DEEP CLEANING", content: "Details about service five." },
-        { title: "SOFA & RUG LAUNDRY", content: "Details about service six." },
-        { title: "EVENT CLEANING", content: "Details about service seven." },
+        { title: "RESIDENTIAL CLEANING", content: "Offers tailored cleaning services to keep your home spotless and welcoming. Options include: " +
+                "one-time deep clean, or regular weekly, bi-weekly and monthly plans." },
+        { title: "COMMERCIAL CLEANING", content: "Provision of thorough, regular cleaning services for office spaces, retail spaces, restaurants and schools" },
+        { title: "SPECIAL EVENT CLEANING", content: "Ensure venue is spotless for parties, weddings and conferences" },
+        { title: "INTEGRATED PEST MANAGEMENT", content: "Inspection and prevention, targeted treatments, and ongoing monitoring." },
+        { title: "DEEP CLEANING and SANITIZING", content: "Targeting dust mites, hard stains, grime from hard-to-reach areas and disinfecting high-touch surfaces." },
+        { title: "MOVE-IN/MOVE-OUT CLEANING", content: "provision of a thorough, top-to-bottom clean to ensure your new home is move-in ready or leave your old space spotless for the next occupants." },
+        { title: "EVENT CLEANING", content: "Pre-event setup, during-event maintenance and post-event cleanup" },
 
     ];
 
