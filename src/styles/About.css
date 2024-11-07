@@ -5,13 +5,13 @@
 }
 
 .blob-plusMachine-background-designs{
-    width: 60%;
+    width: 50%;
     display: flex;
 }
 
 .blob-background-designs{
-    width: 80%;
-    height: 600px;
+    width: 70%;
+    height: 500px;
     border-bottom-right-radius: 90% 90%;
     border-top-left-radius: 0% 40%;
     border-bottom-left-radius: 0% 60%;
@@ -21,11 +21,12 @@
 
 .blob-background-designs img{
     width: 80%;
+    height: 135%;
 
 }
 
 .about-text-frame{
-    width: 40%;
+    width: 45%;
 }
 
 .about-text-frame hr{
@@ -45,5 +46,13 @@
     background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
+.about-text-details-frame p{
+    height: 55px;
+    width: 610px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align:justify;
+    font-family: "Montserrat Alternates", sans-serif;
 }

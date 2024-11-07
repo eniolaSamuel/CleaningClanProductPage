@@ -12,6 +12,16 @@ const About = () => {
                 <hr/>
                 <div className="about-text-details-frame">
                     <h1> ABOUT US</h1>
+                    <p> Company Name: The Cleaning Clan, Lagos
+
+                        Location: Victoria Island, Lagos, Nigeria
+
+                        Industry: Environmental, Hygiene & Cleaning Services
+
+                        The Cleaning Clan is a premier cleaning services provider in Lagos, Nigeria. Since 2017 (Registered in 2020).
+                        our team of skilled professionals has delivered exceptional cleaning solutions to residential and commercial clients.
+                        We pride ourselves on excellence, reliability, and sustainability.
+                    </p>
                 </div>
 
             </div>
