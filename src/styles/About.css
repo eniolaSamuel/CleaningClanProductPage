@@ -10,9 +10,9 @@
 }
 
 .blob-background-designs{
-    width: 70%;
+    width: 90%;
     height: 500px;
-    border-bottom-right-radius: 90% 90%;
+    border-bottom-right-radius: 70% 80%;
     border-top-left-radius: 0% 40%;
     border-bottom-left-radius: 0% 60%;
     border-top-right-radius: 70% 40%;
@@ -21,7 +21,7 @@
 
 .blob-background-designs img{
     width: 80%;
-    height: 135%;
+    height: 125%;
 
 }
 

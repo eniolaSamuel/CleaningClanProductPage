@@ -17,7 +17,7 @@ const ServicePage = () => {
     };
 
     const services = [
-        { title: "JANITORIAL SERVICE", content: "Information about house cleaning services." },
+        { title: "RESIDENTIAL CLEANING", content: "One off, Weekly, Bi-weekly and Monthly." },
         { title: "COMMERCIAL CLEANING", content: "Information about post-construction and move cleaning services." },
         { title: "DOMESTIC CLEANING", content: "Details about service three." },
         { title: "INTEGRATED PEST MANAGEMENT", content: "Details about service four." },
