@@ -221,3 +221,7 @@
     margin-bottom: 200px;
     margin-left: 630px;
 }
+
+.popped-bubble-content h2{
+    width: 20px;
+}

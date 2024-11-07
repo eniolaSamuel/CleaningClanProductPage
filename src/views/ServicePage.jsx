@@ -71,7 +71,7 @@ const ServicePage = () => {
                                 <img src={CloseIcon} alt={CloseIcon}/>
                             </button>
                         </div>
-                        <div>
+                        <div className="popped-bubble-content" >
                             <h2>{services[activeBubble].title}</h2>
                             <p>{services[activeBubble].content}</p>
                         </div>
