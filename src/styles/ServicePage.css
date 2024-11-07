@@ -186,7 +186,7 @@
     position: absolute;
     align-content: center;
     justify-content: center;
-    top: 50%;
+    top: 60%;
     left: 50%;
     right: auto;
     bottom: auto;
@@ -195,10 +195,10 @@
     padding: 20px;
     border-radius: 10px;
     outline: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-image: url("../assets/svg/serviceBackgound.svg");
-    width: 50%;
-    height: 55%;
+    width: 40%;
+    height: 120%;
+    backdrop-filter: blur(15px)!important;
 }
 
 .service-modal-overlay {
@@ -218,7 +218,6 @@
 }
 
 .modal-close-button{
-    right:70% ;
     margin-bottom: 200px;
     margin-left: 630px;
 }
