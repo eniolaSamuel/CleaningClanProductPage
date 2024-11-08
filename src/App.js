@@ -5,6 +5,7 @@ import {ContactUs} from "./views/Contact";
 import ProductLandingPage from "./views/ProductLandingPage";
 import About from "./views/About";
 import ServicePage from "./views/ServicePage";
+import Value from "./views/Value";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
             <Route path="/contactUs" element={<ContactUs />} />
             <Route path="/aboutUs" element={<About />} />
             <Route path="/service" element={<ServicePage />} />
+            <Route path="/values" element={<Value/>} />
+
           </Routes>
         </BrowserRouter>
       </>

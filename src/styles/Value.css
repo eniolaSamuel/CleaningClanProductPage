@@ -1,41 +1,45 @@
-.about-main-frame{
+.value-main-frame{
     width: 100%;
     background-image: linear-gradient(#F9F4FB,#F9F4FB);
     display: flex;
+    padding-top: 200px;
+
 }
 
-.blob-plusMachine-background-designs{
+.blob-plusCarpetWasher-background-designs{
     width: 50%;
     display: flex;
 }
 
-.blob-background-designs{
-    width: 90%;
+.blob-background-designs-washer{
+    width: 100%;
     height: 500px;
-    border-bottom-right-radius: 70% 80%;
-    border-top-left-radius: 0% 40%;
-    border-bottom-left-radius: 0% 60%;
-    border-top-right-radius: 70% 40%;
-    /*background-image: radial-gradient(#fb03b6,#2d0e54);*/
+    border-bottom-left-radius: 70% 80%;
+    border-top-right-radius: 0% 40%;
+    border-bottom-right-radius: 0% 60%;
+    border-top-left-radius: 70% 40%;
+    /*background-image: radial-gradient(#2d0e54,#fb03b6);*/
 }
 
-.blob-background-designs img{
-    width: 80%;
+.blob-background-designs-washer img{
+    width: 90%;
     height: 125%;
 
 }
 
-.about-text-frame{
+.value-text-frame{
     width: 45%;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
-.about-text-frame hr{
+.value-text-frame hr{
     height: 5px;
     width: 250px;
     background-image: radial-gradient( #fb03b6,#2d0e54);
 }
 
-.about-text-details-frame h1{
+.value-text-details-frame h1{
     height: 55px;
     font-size: 40px;
     font-weight: 500;
@@ -48,7 +52,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.about-text-details-frame p{
+.value-text-details-frame p{
     height: 55px;
     width: 610px;
     font-size: 20px;
@@ -58,4 +62,5 @@
     line-height: 35px;
     letter-spacing: 0em;
     color: rgba(0, 0, 0, 0.55);
+
 }
