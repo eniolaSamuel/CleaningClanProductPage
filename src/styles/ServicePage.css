@@ -217,11 +217,18 @@
     filter: blur(50px);
 }
 
+.popped-bubble{
+    width: 40%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 140px;
+    padding-left: 25px;
+}
 .modal-close-button{
-    margin-bottom: 200px;
-    margin-left: 630px;
+
 }
 
 .popped-bubble-content h2{
-    width: 20px;
+  
 }

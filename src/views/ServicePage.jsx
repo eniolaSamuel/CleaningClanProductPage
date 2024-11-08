@@ -23,7 +23,7 @@ const ServicePage = () => {
         { title: "SPECIAL EVENT CLEANING", content: "Ensure venue is spotless for parties, weddings and conferences" },
         { title: "INTEGRATED PEST MANAGEMENT", content: "Inspection and prevention, targeted treatments, and ongoing monitoring." },
         { title: "DEEP CLEANING and SANITIZING", content: "Targeting dust mites, hard stains, grime from hard-to-reach areas and disinfecting high-touch surfaces." },
-        { title: "MOVE-IN/MOVE-OUT CLEANING", content: "provision of a thorough, top-to-bottom clean to ensure your new home is move-in ready or leave your old space spotless for the next occupants." },
+        { title: "MOVE-IN/MOVE-OUT CLEANING", content: "Provision of a thorough, top-to-bottom clean to ensure your new home is move-in ready or leave your old space spotless for the next occupants." },
         { title: "EVENT CLEANING", content: "Pre-event setup, during-event maintenance and post-event cleanup" },
 
     ];
@@ -63,7 +63,7 @@ const ServicePage = () => {
                 overlayClassName="service-modal-overlay"
             >
                 {activeBubble !== null && (
-                    <div>
+                    <div className="popped-bubble">
                         <div>
                             <button
                                 className="modal-close-button"
