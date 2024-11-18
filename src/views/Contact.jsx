@@ -1,41 +1,74 @@
-import React from "react";
-import "../styles/Contact.css"
-import Mail from "../assets/svg/icons8-send-mail.svg"
-import CellPhone from "../assets/svg/icons8-cell-phone.svg"
-import Location from "../assets/svg/icons8-location.svg"
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+import "../styles/Contact.css";
+import Mail from "../assets/svg/icons8-send-mail.svg";
+import CellPhone from "../assets/svg/icons8-cell-phone.svg";
+import Location from "../assets/svg/icons8-location.svg";
 
 export const ContactUs = () => {
-    return(
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_2kvfw6b",    // Service ID
+                "template_zl3djr3",   // Template ID
+                form.current,
+                "W6IqnvBD7h6TUXe3b"  // User/Public Key (USER_ID)
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("Message sent successfully!");
+                },
+                (error) => {
+                    console.error(error.text);
+                    alert("Failed to send message, please try again.");
+                }
+            );
+
+        e.target.reset();
+    };
+
+    return (
         <div className="contact-main-frame">
-            <hr/>
-            <div className="contact-sub-frame">
-                <div className="contact-frame">
-                    <div> <img src={Mail} alt={Mail}/></div>
+            <hr />
+
+            <div className="contact-form">
+                <form ref={form} onSubmit={sendEmail}>
+                    <label htmlFor="name" className="name-label">Your Name</label>
+                    <input id="name" type="text" name="user_name" required />
+
+                    <label htmlFor="email" className="email-label">Email</label>
+                    <input id="email" type="email" name="user_email" required />
+
+                    <label htmlFor="message" className="message-label">Message</label>
+                    <textarea id="message" name="message" required />
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div className="contact-header">
+                <div className="contact-item">
+                    <img src={CellPhone} alt="Phone" />
                     <div>
-                        <h1>Email</h1>
-                        <p>dblsamuel@yahoo.com</p>
-                    </div>
-                </div>
-                <div className="contact-frame">
-                    <div> <img src={CellPhone} alt={CellPhone}/></div>
-                    <div>
-                        <h1>Phone Number</h1>
+                        <h2>Phone Number</h2>
                         <p>+234 802 314 2786</p>
                     </div>
                 </div>
-                <div className="contact-frame">
-                    <div> <img src={Location} alt={Location}/></div>
+                <div className="contact-item">
+                    <img src={Location} alt="Location" />
                     <div>
-                        <h1>Location</h1>
+                        <h2>Location</h2>
                         <p>VI, Lagos, Nigeria</p>
                     </div>
                 </div>
             </div>
-            <div className="faq-frame">
-                <div className="faq-subframe">
-
-                </div>
-            </div>
         </div>
-    )
-}
+    );
+};
+
+export default ContactUs;
