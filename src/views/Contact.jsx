@@ -16,7 +16,7 @@ export const ContactUs = () => {
                 "service_2kvfw6b",    // Service ID
                 "template_zl3djr3",   // Template ID
                 form.current,
-                "W6IqnvBD7h6TUXe3b"  // User/Public Key (USER_ID)
+                "W6IqnvBD7h6TUXe3b"  // User/Public Key
             )
             .then(
                 (result) => {
@@ -44,7 +44,19 @@ export const ContactUs = () => {
                     <label htmlFor="email" className="email-label">Email</label>
                     <input id="email" type="email" name="user_email" required />
 
-                    <label htmlFor="message" className="message-label">Message</label>
+                    <label htmlFor="service" className="service-label">Select Service</label>
+                    <select id="service" name="user_service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Residential Cleaning">Residential Cleaning</option>
+                        <option value="Commercial Cleaning">Commercial Cleaning</option>
+                        <option value="Special Event Cleaning">Special Event Cleaning</option>
+                        <option value="Integrated Pest Management">Integrated Pest Management</option>
+                        <option value="Deep Cleaning & Sanitizing">Deep Cleaning & Sanitizing</option>
+                        <option value="Move-In/Move-Out Cleaning">Move-In/Move-Out Cleaning</option>
+                        <option value="Event Cleaning">Event Cleaning</option>
+                    </select>
+
+                    <label htmlFor="message" className="message-label">Additional Message</label>
                     <textarea id="message" name="message" required />
 
                     <button type="submit">Send Message</button>
