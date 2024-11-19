@@ -72,6 +72,33 @@ form textarea::placeholder {
     color: #f1c4e3;
 }
 
+form input:not(:placeholder-shown),
+form textarea:not(:placeholder-shown) {
+    border: 2px solid #fa37f7; /* Pink border */
+    background-color: #ffe3f7; /* Light pink background */
+    color: #6C1868;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #fa37f7;
+    background-color: #ffe3f7;
+    color: #6C1868;
+    transition: all 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #f1c4e3;
+}
+
+form input,
+form textarea {
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+
 form select option {
     color: #f1c4e3;
     background-color: #6C1868;
