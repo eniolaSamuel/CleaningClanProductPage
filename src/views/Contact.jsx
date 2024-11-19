@@ -37,6 +37,7 @@ export const ContactUs = () => {
             <hr />
 
             <div className="contact-form">
+                <h1>Let's work <br></br>together!</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name" className="name-label">Your Name</label>
                     <input id="name" type="text" name="user_name" required />
