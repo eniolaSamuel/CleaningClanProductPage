@@ -34,10 +34,13 @@ export const ContactUs = () => {
 
     return (
         <div className="contact-main-frame">
-            <hr />
-
             <div className="contact-form">
-                <h1>Let's work <br></br>together!</h1>
+                <div className="contact-headers">
+                    <h1>Let's work <br></br>together!</h1>
+                    <p>Let us help you achieve a spotless and elegant space.</p>
+                    <p>Fill out the following form and we will get back to you in less than 24 hours.</p>
+                </div>
+
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name" className="name-label">Your Name</label>
                     <input id="name" type="text" name="user_name" placeholder="john doe" required />
