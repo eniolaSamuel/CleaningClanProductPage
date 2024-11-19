@@ -40,10 +40,10 @@ export const ContactUs = () => {
                 <h1>Let's work <br></br>together!</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name" className="name-label">Your Name</label>
-                    <input id="name" type="text" name="user_name" required />
+                    <input id="name" type="text" name="user_name" placeholder="john doe" required />
 
                     <label htmlFor="email" className="email-label">Email</label>
-                    <input id="email" type="email" name="user_email" required />
+                    <input id="email" type="email" name="user_email" placeholder="example@email.com" required />
 
                     <label htmlFor="service" className="service-label">Select Service</label>
                     <select id="service" name="user_service" required>
@@ -58,7 +58,7 @@ export const ContactUs = () => {
                     </select>
 
                     <label htmlFor="message" className="message-label">Additional Message</label>
-                    <textarea id="message" name="message" required />
+                    <textarea id="message" name="message" placeholder="input additional message including property description" required />
 
                     <button type="submit">Send Message</button>
                 </form>
