@@ -75,7 +75,7 @@ export const ContactUs = () => {
                         <p>+234 802 314 2786</p>
                     </div>
                 </div>
-                <div className="contact-item">
+                <div className="contact-item-location">
                     <img src={Location} alt="Location" />
                     <div>
                         <h2>ADDRESS</h2>
