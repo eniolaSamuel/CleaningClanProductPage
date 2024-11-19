@@ -25,8 +25,19 @@ body {
     flex-wrap: wrap;
 }
 
-
 .contact-form {
     flex: 1;
     max-width: 600px;
+}
+
+.contact-headers h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.contact-headers p {
+    font-size: 1rem;
+    margin-bottom: 1.0rem;
 }
