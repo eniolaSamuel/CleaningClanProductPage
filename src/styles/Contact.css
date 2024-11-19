@@ -19,7 +19,6 @@ body {
 .contact-main-frame {
     border: 1px solid #e89bd3;
     background-color: #6C1868;
-    display: flex;
     justify-content: space-between;
     padding: 3rem 6%;
     flex-wrap: wrap;
@@ -96,12 +95,15 @@ form button:hover {
 
 .contact-header {
     flex: 1;
-    max-width: 400px;
+    display: flex;
+    max-width: 900px;
     padding: 2rem;
-    background-color: #e89bd3;
+    /*background-color: #e89bd3;*/
     border-radius: 12px;
     margin-top: 1.5rem;
     color: #fff;
+    height: 400px;
+
 }
 
 .contact-item {
@@ -109,4 +111,32 @@ form button:hover {
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
+}
+
+.contact-item img {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-item h2 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.contact-item p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.contact-headers .circle {
+    font-size: 12px;
+    color: #6C1868;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-header h2 {
+    color: #6C1868;
 }

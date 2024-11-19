@@ -71,15 +71,15 @@ export const ContactUs = () => {
                 <div className="contact-item">
                     <img src={CellPhone} alt="Phone" />
                     <div>
-                        <h2>Phone Number</h2>
+                        <h2>CALL US</h2>
                         <p>+234 802 314 2786</p>
                     </div>
                 </div>
                 <div className="contact-item">
                     <img src={Location} alt="Location" />
                     <div>
-                        <h2>Location</h2>
-                        <p>VI, Lagos, Nigeria</p>
+                        <h2>ADDRESS</h2>
+                        <p>C1, LSDPC ESTATE, 12-24 ADEOLA ODEKU WAY, VICTORIA ISLAND. LAGOS(NG-LA), 101241.</p>
                     </div>
                 </div>
             </div>
