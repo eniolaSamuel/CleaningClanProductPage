@@ -82,12 +82,31 @@ form button {
     font-size: 1rem;
     color: #6C1868;
     background-color: #fa37f7;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid #6C1868;
 }
 
 form button:hover {
-    background-color: #fa37f7;
+    color: #fa37f7;
+    background-color: #6C1868;
+    border: 2px solid #fa37f7;
+}
+
+.contact-header {
+    flex: 1;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #e89bd3;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
