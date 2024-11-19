@@ -1,7 +1,8 @@
 .contact-main-frame{
-    background-color: #F9F4FB;
-    height: 600px;
+    width: 100%;
     padding-top: 100px;
+    background-color: #da7ef8;
+    background-image: linear-gradient(#F9F4FB,#F9F4FB,#da7ef8);
 }
 
 .contact-main-frame hr{
