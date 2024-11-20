@@ -13,10 +13,10 @@ export const ContactUs = () => {
 
         emailjs
             .sendForm(
-                "service_2kvfw6b",    // Service ID
-                "template_zl3djr3",   // Template ID
+                "service_2kvfw6b",
+                "template_zl3djr3",
                 form.current,
-                "W6IqnvBD7h6TUXe3b"  // User/Public Key
+                "W6IqnvBD7h6TUXe3b"
             )
             .then(
                 (result) => {
@@ -28,9 +28,9 @@ export const ContactUs = () => {
                     alert("Failed to send message, please try again.");
                 }
             );
-
         e.target.reset();
     };
+
 
     return (
         <div className="contact-main-frame">
