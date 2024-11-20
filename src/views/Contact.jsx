@@ -43,10 +43,10 @@ export const ContactUs = () => {
 
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name" className="name-label">Your Name</label>
-                    <input id="name" type="text" name="user_name" placeholder="john doe" required />
+                    <input id="name" type="text" name="user_name" placeholder="John Doe" required/>
 
                     <label htmlFor="email" className="email-label">Email</label>
-                    <input id="email" type="email" name="user_email" placeholder="example@email.com" required />
+                    <input id="email" type="email" name="user_email" placeholder="example@email.com" required/>
 
                     <label htmlFor="service" className="service-label">Select Service</label>
                     <select id="service" name="user_service" required>
@@ -61,22 +61,24 @@ export const ContactUs = () => {
                     </select>
 
                     <label htmlFor="message" className="message-label">Additional Message</label>
-                    <textarea id="message" name="message" placeholder="input additional message including property description" required />
+                    <textarea id="message" name="message"
+                              placeholder="Input additional message including property description and number of rooms" required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
+
             </div>
 
             <div className="contact-header">
                 <div className="contact-item">
-                    <img src={CellPhone} alt="Phone" />
+                    <img src={CellPhone} alt="Phone"/>
                     <div>
                         <h2>CALL US</h2>
                         <p>+234 802 314 2786</p>
                     </div>
                 </div>
                 <div className="contact-item-location">
-                    <img src={Location} alt="Location" />
+                    <img src={Location} alt="Location"/>
                     <div>
                         <h2>ADDRESS</h2>
                         <p>C1, LSDPC ESTATE, 12-24 ADEOLA ODEKU WAY, VICTORIA ISLAND. LAGOS(NG-LA), 101241.</p>
