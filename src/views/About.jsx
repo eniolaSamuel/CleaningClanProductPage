@@ -1,98 +1,57 @@
 import "../styles/About.css";
-import Machine from "../assets/svg/cleaning-machine.svg";
 
 const About = () => {
     return (
-        <div className="about-container">
-            {/* Hero Section */}
-            <section className="hero-section">
-                <div className="hero-text">
-                    <h1>The Cleaning Clan</h1>
-                    <p>
-                        Located in Victoria Island, Lagos, Nigeria, *The Cleaning Clan* is your trusted partner for
-                        environmental, hygiene, and cleaning services. Established in 2017 and officially registered in 2020,
-                        we provide exceptional cleaning solutions tailored to residential and commercial clients.
-                    </p>
-                </div>
-                <div className="hero-image">
-                    <img src={Machine} alt="Cleaning Machine" />
+        <div className="about-page">
+
+            <section className="about-section">
+                <h2>About Us</h2>
+                <p>
+                    Located in Victoria Island, Lagos, Nigeria, *The Cleaning Clan* is a premier cleaning services provider.
+                    Since 2017, we have delivered exceptional cleaning solutions tailored to residential and commercial clients.
+                    Registered in 2020, we pride ourselves on quality, reliability, trust, and sustainability.
+                </p>
+                <div className="about-image-placeholder">
+                    {/* Space for Image */}
                 </div>
             </section>
 
-            {/* Notable Projects Section */}
-            <section className="projects-section">
-                <h2>Notable Projects</h2>
-                <div className="projects-grid">
-                    <div className="project-card">
-                        <h3>Presidential Cleaning</h3>
-                        <p>Naval Dockyard Limited (2024)</p>
-                    </div>
-                    <div className="project-card">
-                        <h3>Presidential Convoy</h3>
-                        <p>Vacation Home Cleaning (2024)</p>
-                    </div>
-                    <div className="project-card">
-                        <h3>Fleet Inspection</h3>
-                        <p>President Mohammadu Buhari (2023)</p>
-                    </div>
-                    <div className="project-card">
-                        <h3>Post-Construction Cleaning</h3>
-                        <p>Federal High Court Complex, Ikoyi</p>
-                    </div>
-                    <div className="project-card">
-                        <h3>Luxury Villa Cleaning</h3>
-                        <p>Courtland, Lekki</p>
-                    </div>
-                    <div className="project-card">
-                        <h3>Fleet & Vessel Services</h3>
-                        <p>Inspection, Cleaning & Advisory</p>
-                    </div>
+
+            <section className="founders-section">
+                <h2>Our Founders</h2>
+                <p>
+                    The Cleaning Clan was established by a team of visionary founders passionate about creating a cleaner, healthier
+                    environment for businesses and homes in Nigeria. Their unwavering dedication to excellence and sustainability
+                    continues to shape our operations today.
+                </p>
+                <div className="founders-image-placeholder">
+                    {/* Space for Image */}
                 </div>
             </section>
 
-            {/* Core Values Section */}
-            <section className="values-section">
-                <h2>Our Values</h2>
-                <div className="values-grid">
-                    <div className="value-card">
-                        <h3>Quality Service</h3>
-                        <p>Excellence in every cleaning task.</p>
-                    </div>
-                    <div className="value-card">
-                        <h3>Reliability</h3>
-                        <p>Timely and dependable service.</p>
-                    </div>
-                    <div className="value-card">
-                        <h3>Trust</h3>
-                        <p>Confidentiality and respect for clients' property.</p>
-                    </div>
-                    <div className="value-card">
-                        <h3>Sustainability</h3>
-                        <p>Eco-friendly products for a greener future.</p>
-                    </div>
+
+            <section className="culture-section">
+                <h2>Our Culture</h2>
+                <p>
+                    At *The Cleaning Clan*, our culture is built on trust, innovation, and a strong commitment to our clients. We
+                    foster a workplace environment that values teamwork and professional growth, ensuring our staff is motivated
+                    to exceed expectations every day.
+                </p>
+                <div className="culture-image-placeholder">
+                    {/* Space for Image */}
                 </div>
             </section>
 
-            {/* Why Choose Us Section */}
-            <section className="choose-us-section">
-                <h2>Why Choose Us?</h2>
-                <div className="values-grid">
-                    <div className="value-card bubble">
-                        <h3>Competitive Pricing</h3>
-                        <p>Affordable rates without compromising on quality.</p>
-                    </div>
-                    <div className="value-card bubble">
-                        <h3>Flexible Scheduling</h3>
-                        <p>Service appointments tailored to your convenience.</p>
-                    </div>
-                    <div className="value-card bubble">
-                        <h3>Fully Insured</h3>
-                        <p>Enjoy peace of mind with our bonded and insured services.</p>
-                    </div>
-                    <div className="value-card bubble">
-                        <h3>Referral-driven</h3>
-                        <p>Our happy clients drive our growth through referrals.</p>
-                    </div>
+            {/* Our Product Section */}
+            <section className="product-section">
+                <h2>Our Product</h2>
+                <p>
+                    Our suite of services includes residential, commercial, and post-construction cleaning, tailored to meet
+                    the highest standards. From eco-friendly products to cutting-edge techniques, we redefine excellence in
+                    cleaning services.
+                </p>
+                <div className="product-image-placeholder">
+                    {/* Space for Image */}
                 </div>
             </section>
         </div>
