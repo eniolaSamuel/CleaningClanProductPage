@@ -1,4 +1,5 @@
 import "../styles/About.css";
+import AboutUs from "../assets/svg/aboutUs-Image.svg";
 
 const About = () => {
     return (
@@ -11,7 +12,7 @@ const About = () => {
                     Since 2017, we have delivered exceptional cleaning solutions tailored to residential and commercial clients.
                     Registered in 2020, we pride ourselves on quality, reliability, trust, and sustainability.
                 </p>
-                <div className="image-placeholder">Image Placeholder</div>
+                <div className="image-placeholder"><img src={AboutUs}/></div>
             </section>
 
             {/* Notable Projects Section */}
