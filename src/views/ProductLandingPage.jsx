@@ -12,7 +12,7 @@ const ProductLandingPage =() =>{
             <HomePage/>
             <ServicePage />
             <About />
-            <Value />
+            {/*<Value />*/}
             <ContactUs />
         </div>
     )

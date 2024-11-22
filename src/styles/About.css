@@ -1,61 +1,120 @@
-.about-main-frame{
-    width: 100%;
-    background-image: linear-gradient(#F9F4FB,#F9F4FB);
+.about-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
 }
 
-.blob-plusMachine-background-designs{
-    width: 50%;
-    display: flex;
+.hero-text {
+    flex: 1;
 }
 
-.blob-background-designs{
-    width: 90%;
-    height: 500px;
-    border-bottom-right-radius: 70% 80%;
-    border-top-left-radius: 0% 40%;
-    border-bottom-left-radius: 0% 60%;
-    border-top-right-radius: 70% 40%;
-    /*background-image: radial-gradient(#fb03b6,#2d0e54);*/
+.hero-text h1 {
+    font-size: 3rem;
+    color: #6C1868;
+    margin-bottom: 1rem;
 }
 
-.blob-background-designs img{
-    width: 80%;
-    height: 125%;
-
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-.about-text-frame{
-    width: 45%;
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.about-text-frame hr{
-    height: 5px;
-    width: 250px;
-    background-image: radial-gradient( #fb03b6,#2d0e54);
-}
-
-.about-text-details-frame h1{
-    height: 55px;
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 0em;
+/* Notable Projects Section */
+.projects-section {
+    margin-bottom: 4rem;
     text-align: center;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-style: normal;
-    background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-.about-text-details-frame p{
-    height: 55px;
-    width: 610px;
-    font-size: 20px;
-    font-weight: 300;
-    text-align:justify;
-    font-family: "Varela Round", sans-serif;
-    line-height: 35px;
-    letter-spacing: 0em;
-    color: rgba(0, 0, 0, 0.55);
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Shared Styles for Values and Why Choose Us */
+.values-section,
+.choose-us-section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.values-section h2,
+.choose-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.value-card {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card h3 {
+    font-size: 1.2rem;
+    color: #6C1868;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+}
+
+/* Add bubble-specific class for Why Choose Us bubbles */
+.value-card.bubble {
+    background-color: #ffebf2;
+    box-shadow: 0 8px 15px rgba(255, 123, 84, 0.2);
+}
+
