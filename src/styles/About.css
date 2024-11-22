@@ -1,7 +1,7 @@
 .about-page {
     font-family: 'Arial', sans-serif;
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-image: linear-gradient(#F9F5FA, #F9F5FA, #fff);
     color: #333;
 }
 
@@ -10,6 +10,7 @@ h2 {
     margin-bottom: 1rem;
     color: #2d0e54;
     text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
 p {
@@ -27,6 +28,110 @@ section {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2d0e54;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 1.5rem; /* Space between cards */
+    padding: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* One card per row on very small screens */
+    }
+}
+
+/* Shared Styles for Values and Why Choose Us */
+.values-section,
+.choose-us-section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.values-section h2,
+.choose-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.value-card {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card h3 {
+    font-size: 1.2rem;
+    color: #2d0e54;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+}
+
+/* Add bubble-specific class for Why Choose Us bubbles */
+.value-card.bubble {
+    background-color: #ffebf2;
+    box-shadow: 0 8px 15px rgba(255, 123, 84, 0.2);
 }
 
 /* Image Placeholder Styling */

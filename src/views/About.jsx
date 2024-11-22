@@ -17,44 +17,78 @@ const About = () => {
             {/* Notable Projects Section */}
             <section className="projects-section">
                 <h2>Notable Projects</h2>
-                <ul>
-                    <li>Presidential Cleaning, Naval Dockyard Limited (2024)</li>
-                    <li>President Mohammadu Buhari's Fleet Inspection Ceremony (2023)</li>
-                    <li>Vacation Home Cleaning for Presidential Convoy (2024)</li>
-                    <li>Move-in Cleaning for LSDPC General Managers</li>
-                    <li>Post-Construction Cleaning, The Ultramodern Federal High Court Complex, Bourdillon, Ikoyi</li>
-                    <li>Post-Construction Cleaning, Iconic Towers, Victoria Island</li>
-                    <li>Courtland Luxury Villa, Platinum, Lekki</li>
-                    <li>Fleet & Vessels Inspection, Cleaning & Advisory</li>
-                </ul>
-                <div className="image-placeholder">Image Placeholder</div>
+                <div className="projects-grid">
+                    <div className="project-card">
+                        <h3>Presidential Cleaning</h3>
+                        <p>Naval Dockyard Limited (2024)</p>
+                    </div>
+                    <div className="project-card">
+                        <h3>Presidential Convoy</h3>
+                        <p>Vacation Home Cleaning (2024)</p>
+                    </div>
+                    <div className="project-card">
+                        <h3>Fleet Inspection</h3>
+                        <p>President Mohammadu Buhari (2023)</p>
+                    </div>
+                    <div className="project-card">
+                        <h3>Post-Construction Cleaning</h3>
+                        <p>Federal High Court Complex, Ikoyi</p>
+                    </div>
+                    <div className="project-card">
+                        <h3>Luxury Villa Cleaning</h3>
+                        <p>Courtland, Lekki</p>
+                    </div>
+                    <div className="project-card">
+                        <h3>Fleet & Vessel Services</h3>
+                        <p>Inspection, Cleaning & Advisory</p>
+                    </div>
+                </div>
             </section>
 
-            {/* Our Values Section */}
+            {/* Core Values Section */}
             <section className="values-section">
                 <h2>Our Values</h2>
-                <p>We are guided by the following principles:</p>
-                <ul>
-                    <li><strong>Quality Service:</strong> Excellence in every cleaning task</li>
-                    <li><strong>Reliability:</strong> Timely and dependable service</li>
-                    <li><strong>Trust:</strong> Confidentiality and respect for clients' property</li>
-                    <li><strong>Sustainability:</strong> Eco-friendly products for a greener future</li>
-                </ul>
-                <div className="image-placeholder">Image Placeholder</div>
+                <div className="values-grid">
+                    <div className="value-card">
+                        <h3>Quality Service</h3>
+                        <p>Excellence in every cleaning task.</p>
+                    </div>
+                    <div className="value-card">
+                        <h3>Reliability</h3>
+                        <p>Timely and dependable service.</p>
+                    </div>
+                    <div className="value-card">
+                        <h3>Trust</h3>
+                        <p>Confidentiality and respect for clients' property.</p>
+                    </div>
+                    <div className="value-card">
+                        <h3>Sustainability</h3>
+                        <p>Eco-friendly products for a greener future.</p>
+                    </div>
+                </div>
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="why-choose-us-section">
-                <h2>Why Choose Us</h2>
-                <p>We stand out because of:</p>
-                <ul>
-                    <li><strong>Competitive Pricing:</strong> Affordable rates without compromising quality</li>
-                    <li><strong>Flexible Scheduling:</strong> Convenient services that fit your timetable</li>
-                    <li><strong>Fully Insured and Bonded:</strong> Trust and security guaranteed</li>
-                    <li><strong>Excellent Customer Service:</strong> Client satisfaction is our top priority</li>
-                    <li><strong>Referral-Driven Model:</strong> Earn trust through exceptional service</li>
-                </ul>
-                <div className="image-placeholder">Image Placeholder</div>
+            <section className="choose-us-section">
+                <h2>Why Choose Us?</h2>
+                <div className="values-grid">
+                    <div className="value-card bubble">
+                        <h3>Competitive Pricing</h3>
+                        <p>Affordable rates without compromising on quality.</p>
+                    </div>
+                    <div className="value-card bubble">
+                        <h3>Flexible Scheduling</h3>
+                        <p>Service appointments tailored to your convenience.</p>
+                    </div>
+                    <div className="value-card bubble">
+                        <h3>Fully Insured</h3>
+                        <p>Enjoy peace of mind with our bonded and insured services.</p>
+                    </div>
+                    <div className="value-card bubble">
+                        <h3>Referral-driven</h3>
+                        <p>Our happy clients drive our growth through referrals.</p>
+                    </div>
+                </div>
             </section>
         </div>
     );
