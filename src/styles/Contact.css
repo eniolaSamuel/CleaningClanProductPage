@@ -21,7 +21,7 @@ body {
 
 .contact-form {
     flex: 1;
-    max-width: 600px;
+
 }
 
 .contact-headers h1 {
@@ -42,6 +42,15 @@ body {
     gap: 1.5rem;
 }
 
+.form-row-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group{
+    width: 620px;
+}
+
 .contact-form form label {
     font-size: 0.9rem;
     color: #e89bd3;
@@ -59,6 +68,9 @@ body {
     background-color: #6C1868;
     color: #f1c4e3;
     outline: none;
+    height: 50px;
+
+    justify-content: space-between;
 }
 
 .contact-form form input::placeholder,
