@@ -29,7 +29,7 @@ const ServicePage = () => {
     ];
 
     return (
-        <div className="service-page-container">
+        <div className="service-page-container" id="service-section">
             <div className="service-container">
                 <div className="services-text">
                     <h1>OUR SERVICES</h1>

@@ -82,7 +82,7 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className="contact-main-frame">
+        <div className="contact-main-frame" id="contact-section">
             <div className="contact-form">
                 <div className="contact-headers">
                     <h1>Let's work <br /> together!</h1>

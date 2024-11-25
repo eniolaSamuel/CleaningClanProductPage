@@ -26,9 +26,7 @@ const NavBar =() =>{
         { name: "Home", link: "/" },
         { name: "Services", link: "/" },
         { name: "About Us", link: "/" },
-        { name: "Testimonials", link: "/" },
         { name: "Contact Us", link: "//contactUs" },
-        { name: "FAQs", link: "/" },
     ];
     return(
         <div className="navigation-main-frame">
