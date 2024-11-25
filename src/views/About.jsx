@@ -15,7 +15,7 @@ const About = () => {
             </section>
 
             {/* Notable Projects Section */}
-            <section className="projects-section">
+            <section className="projects-section" id="projects-section">
                 <h2>Notable Projects</h2>
                 <div className="projects-grid">
                     <div className="project-card">

@@ -147,15 +147,15 @@
 
 .services-text h1 {
     height: 55px;
-    font-size: 40px;
-    font-weight: 500;
     letter-spacing: 0em;
     text-align: center;
     font-family: "Montserrat Alternates", sans-serif;
-    font-style: normal;
-    background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    color: #9C1275;
+    margin-bottom: 1rem;
+    margin-top: 20px;
+
+
 }
 
 .services-text p{

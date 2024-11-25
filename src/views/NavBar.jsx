@@ -3,7 +3,6 @@ import "../styles/NavBar.css";
 import TCCLOGO from "../assets/svg/tccLogo.svg";
 
 const NavBar = () => {
-    // Scroll to the target section by id
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -16,6 +15,8 @@ const NavBar = () => {
         { name: "Services", id: "service-section" },
         { name: "About Us", id: "about-us" },
         { name: "Contact Us", id: "contact-us" },
+        { name: "Projects", id: "projects-section" },
+
     ];
 
     return (
