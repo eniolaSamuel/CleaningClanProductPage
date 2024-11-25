@@ -4,8 +4,7 @@ import AboutUs from "../assets/svg/aboutUs-Image.svg";
 const About = () => {
     return (
         <div className="about-page">
-            {/* About Us Section */}
-            <section className="about-section">
+            <section className="about-section" id="about-us">
                 <h2>About Us</h2>
                 <p>
                     Located in Victoria Island, Lagos, Nigeria, *The Cleaning Clan* is a premier cleaning services provider.

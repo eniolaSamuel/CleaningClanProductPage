@@ -82,7 +82,7 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className="contact-main-frame" id="contact-section">
+        <section className="contact-main-frame" id="contact-us">
             <div className="contact-form">
                 <div className="contact-headers">
                     <h1>Let's work <br /> together!</h1>
@@ -163,7 +163,7 @@ export const ContactUs = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
