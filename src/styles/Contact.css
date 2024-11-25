@@ -1,12 +1,4 @@
-/*.contact-main-frame{*/
-/*    width: 100%;*/
-/*    padding-top: 100px;*/
-/*    background-image: linear-gradient(#F9F4FB,#F9F4FB,#da7ef8);*/
-/*}*/
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,8 +13,7 @@ body {
     background-color: #6C1868;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 6%;
-    flex-wrap: wrap;
+
 
 }
 
@@ -43,21 +34,21 @@ body {
     margin-bottom: 1.0rem;
 }
 
-form {
+.contact-form form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-form label {
+.contact-form form label {
     font-size: 0.9rem;
     color: #e89bd3;
     margin-bottom: 0.3rem;
 }
 
-form input,
-form select,
-form textarea {
+.contact-form form input,
+.contact-form form select,
+.contact-form form textarea {
     width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
@@ -68,20 +59,20 @@ form textarea {
     outline: none;
 }
 
-form input::placeholder,
-form textarea::placeholder {
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
     color: #f1c4e3;
 }
 
-form input:not(:placeholder-shown),
-form textarea:not(:placeholder-shown) {
+.contact-form form input:not(:placeholder-shown),
+.contact-form form textarea:not(:placeholder-shown) {
     border: 2px solid #fa37f7; /* Pink border */
     background-color: #ffe3f7; /* Light pink background */
     color: #6C1868;
 }
 
-form input:focus,
-form textarea:focus {
+.contact-form form input:focus,
+.contact-form form textarea:focus {
     outline: none;
     border: 2px solid #fa37f7;
     background-color: #ffe3f7;
@@ -89,23 +80,23 @@ form textarea:focus {
     transition: all 0.3s ease;
 }
 
-form input::placeholder,
-form textarea::placeholder {
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
     color: #f1c4e3;
 }
 
-form input,
-form textarea {
+.contact-form form input,
+.contact-form form textarea {
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
 
-form select option {
+.contact-form form select option {
     color: #f1c4e3;
     background-color: #6C1868;
 }
 
-form button {
+.contact-form form button {
     padding: 0.8rem 2rem;
     font-size: 1rem;
     color: #6C1868;
@@ -116,7 +107,7 @@ form button {
     border: 2px solid #6C1868;
 }
 
-form button:hover {
+.contact-form form button:hover {
     color: #fa37f7;
     background-color: #6C1868;
     border: 2px solid #fa37f7;

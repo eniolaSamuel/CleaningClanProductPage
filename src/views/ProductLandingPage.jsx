@@ -12,8 +12,8 @@ const ProductLandingPage =() =>{
             <HomePage/>
             <ServicePage />
             <About />
-            {/*<Value />*/}
             <ContactUs />
+
         </div>
     )
 }
