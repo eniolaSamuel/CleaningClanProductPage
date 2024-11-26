@@ -1,66 +1,84 @@
-.value-main-frame{
-    width: 100%;
-    background-image: linear-gradient(#F9F4FB,#F9F4FB);
+/* Footer styles */
+.footer {
+    background-color: #ffffff;
+    color: #9c1275;
+    padding: 2rem;
+    border-radius: 20px 20px 0 0;
     display: flex;
-    padding-top: 200px;
-
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.blob-plusCarpetWasher-background-designs{
-    width: 50%;
+.footer-content {
     display: flex;
-}
-
-.blob-background-designs-washer{
+    justify-content: space-between;
     width: 100%;
-    height: 500px;
-    border-bottom-left-radius: 70% 80%;
-    border-top-right-radius: 0% 40%;
-    border-bottom-right-radius: 0% 60%;
-    border-top-left-radius: 70% 40%;
-    /*background-image: radial-gradient(#2d0e54,#fb03b6);*/
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.blob-background-designs-washer img{
-    width: 90%;
-    height: 125%;
-
+.footer-left {
+    flex: 1;
+    padding-right: 2rem;
 }
 
-.value-text-frame{
-    width: 45%;
-    margin-right: 100px;
-    margin-left: 100px;
+.logo-space {
+    width: 80px;
+    height: 80px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
-.value-text-frame hr{
-    height: 5px;
-    width: 250px;
-    background-image: radial-gradient( #fb03b6,#2d0e54);
+.footer-phrase {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-.value-text-details-frame h1{
-    height: 55px;
-    font-size: 40px;
+.footer-right {
+    flex: 1;
+    text-align: right;
+    padding-left: 2rem;
+}
+
+.footer-right h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #9c1275;
     font-weight: 500;
-    letter-spacing: 0em;
-    text-align: center;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-style: normal;
-    background: -webkit-repeating-linear-gradient(#0e000a, #2d0e54);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transition: color 0.3s;
 }
 
-.value-text-details-frame p{
-    height: 55px;
-    width: 610px;
-    font-size: 20px;
-    font-weight: 300;
-    text-align:justify;
-    font-family: "Varela Round", sans-serif;
-    line-height: 35px;
-    letter-spacing: 0em;
-    color: rgba(0, 0, 0, 0.55);
+.footer-right ul li a:hover {
+    color: #c71ab2;
+}
 
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        padding-left: 0;
+    }
 }
