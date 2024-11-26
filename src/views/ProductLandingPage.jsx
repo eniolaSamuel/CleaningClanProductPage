@@ -13,7 +13,7 @@ const ProductLandingPage =() =>{
             <ServicePage />
             <About />
             <ContactUs />
-
+            <Footer/>
         </div>
     )
 }

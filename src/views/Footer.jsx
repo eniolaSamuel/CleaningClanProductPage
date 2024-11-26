@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Footer.css"; // Assuming you'll use a separate CSS file
+import "../styles/Footer.css";
+import LOGO from "../assets/svg/tccLogo.svg"
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-left">
                     <div className="logo-space">
-                        {/* Replace this with your logo */}
+                        <img src={LOGO}/>
                     </div>
                     <p className="footer-phrase">
                         "A clean space is a happy place."
