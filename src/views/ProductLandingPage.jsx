@@ -3,7 +3,7 @@ import {ContactUs} from "./Contact";
 import HomePage from "./HomePage";
 import ServicePage from "./ServicePage";
 import About from "./About";
-import Value from "./Value";
+import Footer from "./Footer";
 
 const ProductLandingPage =() =>{
     return(
