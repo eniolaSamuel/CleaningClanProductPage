@@ -1,15 +1,14 @@
-/* Footer styles */
 .footer {
     background-color: #ffffff;
     color: #9c1275;
     padding: 2rem;
-    border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     font-family: Arial, sans-serif;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    height: 250px;
 }
 
 .footer-content {
@@ -23,13 +22,16 @@
 .footer-left {
     flex: 1;
     padding-right: 2rem;
+    justify-content: space-between;
 }
-
+.footer-left p{
+    margin-top: 70px;
+    font-weight: 500;
+}
 .logo-space {
-    width: 80px;
-    height: 80px;
+    width:280px;
+    height:100px;
     background-color: #f7f7f7;
-    border-radius: 50%;
     margin-bottom: 1rem;
 }
 
@@ -47,6 +49,7 @@
 .footer-right h4 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+   right: 90px;
 }
 
 .footer-right ul {
