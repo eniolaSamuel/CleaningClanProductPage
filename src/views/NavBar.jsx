@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/NavBar.css";
 import TCCLOGO from "../assets/svg/tccLogo.svg";
+import { FaBars, FaTimes } from "react-icons/fa"; // Icons for hamburger and close menu
 
 const NavBar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
+        setIsMenuOpen(false); // Close menu after clicking a link
     };
 
     let links = [
@@ -16,7 +20,6 @@ const NavBar = () => {
         { name: "About Us", id: "about-us" },
         { name: "Contact Us", id: "contact-us" },
         { name: "Projects", id: "projects-section" },
-
     ];
 
     return (
@@ -24,7 +27,7 @@ const NavBar = () => {
             <div className="tcc-logo-frame">
                 <img src={TCCLOGO} alt="TCC Logo" />
             </div>
-            <div className="tcc-nav-link-frame">
+            <div className={`tcc-nav-link-frame ${isMenuOpen ? "open" : ""}`}>
                 <ul className="tcc-nav-link">
                     {links.map((link) => (
                         <li
@@ -37,13 +40,12 @@ const NavBar = () => {
                     ))}
                 </ul>
             </div>
-            <div className="tcc-contact-button-frame">
-                <button
-                    className="tcc-contact-button"
-                    onClick={() => scrollToSection("contact-us")}
-                >
-                    CONTACT US
-                </button>
+            <div className="hamburger-menu">
+                {isMenuOpen ? (
+                    <FaTimes onClick={() => setIsMenuOpen(false)} />
+                ) : (
+                    <FaBars onClick={() => setIsMenuOpen(true)} />
+                )}
             </div>
         </div>
     );
