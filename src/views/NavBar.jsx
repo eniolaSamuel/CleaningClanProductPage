@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
 import TCCLOGO from "../assets/svg/tccLogo.svg";
-import { FaBars, FaTimes } from "react-icons/fa"; // Icons for hamburger and close menu
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const NavBar = () => {
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
-        setIsMenuOpen(false); // Close menu after clicking a link
+        setIsMenuOpen(false);
     };
 
     let links = [
