@@ -64,10 +64,10 @@
     color: #9c1275;
 }
 
-/* Show hamburger and hide links on small screens */
+
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: block; /* Show hamburger on small screens */
+        display: block;
     }
 
     .tcc-nav-link-frame {
