@@ -53,12 +53,12 @@
 }
 
 .tcc-contact-button-frame {
-    display: none; /* Hidden since replaced by hamburger menu */
+    display: none;
 }
 
-/* Hamburger Menu Styling */
+
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     font-size: 24px;
     cursor: pointer;
     color: #9c1275;
