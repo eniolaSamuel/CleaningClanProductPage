@@ -71,14 +71,14 @@
     }
 
     .tcc-nav-link-frame {
-        display: none; /* Hide links by default on small screens */
+        display: none;
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
 
     .tcc-nav-link-frame.open {
-        display: flex; /* Show links when hamburger is clicked */
+        display: flex;
         background-color: #ffffff;
         position: absolute;
         top: 60px;
