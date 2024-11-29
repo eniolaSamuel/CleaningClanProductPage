@@ -38,6 +38,7 @@ body {
 .contact-form form {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .form-row-group {
