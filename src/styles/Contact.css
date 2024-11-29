@@ -12,20 +12,19 @@ body {
     border: 1px solid #e89bd3;
     background-color: #6C1868;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Change to column for responsiveness */
     padding: 2rem;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .contact-form {
     flex: 1;
-
+    width: 100%;
 }
 
 .contact-headers h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -33,23 +32,22 @@ body {
 
 .contact-headers p {
     font-size: 1rem;
-    margin-bottom: 1.0rem;
+    margin-bottom: 1rem;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    /*gap: 1.5rem;*/
 }
 
-.form-row-group{
+.form-row-group {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stacked on smaller screens */
+    gap: 1rem; /* Space between fields */
 }
 
-.form-group{
-    width: 620px;
-    height: 80px;
+.form-group {
+    width: 100%;
 }
 
 .contact-form form label {
@@ -70,45 +68,6 @@ body {
     color: #f1c4e3;
     outline: none;
     height: 50px;
-
-    justify-content: space-between;
-}
-
-.contact-form form input::placeholder,
-.contact-form form textarea::placeholder {
-    color: #f1c4e3;
-}
-
-.contact-form form input:not(:placeholder-shown),
-.contact-form form textarea:not(:placeholder-shown) {
-    border: 2px solid #fa37f7; /* Pink border */
-    background-color: #ffe3f7; /* Light pink background */
-    color: #6C1868;
-}
-
-.contact-form form input:focus,
-.contact-form form textarea:focus {
-    outline: none;
-    border: 2px solid #fa37f7;
-    background-color: #ffe3f7;
-    color: #6C1868;
-    transition: all 0.3s ease;
-}
-
-.contact-form form input::placeholder,
-.contact-form form textarea::placeholder {
-    color: #f1c4e3;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
-}
-
-
-.contact-form form select option {
-    color: #f1c4e3;
-    background-color: #6C1868;
 }
 
 .contact-form form button {
@@ -128,53 +87,35 @@ body {
     border: 2px solid #fa37f7;
 }
 
-.contact-header {
-    flex: 1;
-    max-width: 400px;
-    padding: 2rem;
-    background-color: #e89bd3;
-    border-radius: 12px;
-    margin-top: 1.5rem;
-    color: #6C1868;
-    height: 400px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-headers h1 {
+        font-size: 2.5rem;
+    }
 
+    .form-row-group {
+        gap: 1rem;
+    }
+
+    .form-group {
+        width: 100%; /* Full width for form groups */
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
+@media (max-width: 480px) {
+    .contact-headers h1 {
+        font-size: 2rem;
+    }
 
-.contact-item-location {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
+    .contact-form {
+        padding: 0.5rem;
+    }
 
-.contact-item img {
-    width: 36px;
-    height: 36px;
-}
-
-.contact-item-location img{
-    width: 33px;
-    height: 36px;
-}
-
-.contact-item h2 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-}
-
-.contact-item p {
-    font-size: 0.9rem;
-
-}
-
-.contact-headers .circle {
-    font-size: 12px;
-    color: #ffcc4d;
+    .contact-headers p {
+        font-size: 0.9rem;
+    }
 }
