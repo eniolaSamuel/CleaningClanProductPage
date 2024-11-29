@@ -51,7 +51,7 @@ const ServicePage = () => {
                     ))}
                 </div>
                 <div className="services-clause-text">
-                    <p>*we also offer Trainings and Consultation*</p>
+                    <p>*we also offer Trainings and Consultations*</p>
                 </div>
             </div>
 
