@@ -16,7 +16,7 @@
     margin: 20px;
     flex: 1;
     max-width: 600px;
-    text-align: center; /* Center aligns on smaller devices */
+    text-align: left; /* Center aligns on smaller devices */
 }
 
 .text-frame h1 {
@@ -24,7 +24,6 @@
     line-height: 1.2;
     font-weight: 600;
     color: #9C1275;
-    text-align: left
 }
 
 .text-frame p {
@@ -32,7 +31,6 @@
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.55);
     margin-top: 20px;
-    text-align: left;
 }
 
 .home-page-contact-button {
