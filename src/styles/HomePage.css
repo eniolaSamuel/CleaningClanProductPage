@@ -1,80 +1,87 @@
-.home-page-main-frame{
+.home-page-main-frame {
     width: 100%;
-    height: 89vh;
+    min-height: 89vh;
     display: flex;
-    /*background-image:*/
-    /*        linear-gradient(to bottom, rgba(246, 246, 246, 0.45), rgba(255, 255, 255, 0.42)),*/
-    /*        url('../assets/svg/purple-pink-backdrop.svg');*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: #F7F7F7;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
+    padding: 20px; /* Adds padding for smaller screens */
 }
 
-.text-frame{
-    height: 300px;
-    margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 70px;
-    width: 60%;
-
+.text-frame {
+    margin: 20px;
+    flex: 1;
+    max-width: 600px;
+    text-align: center; /* Center aligns on smaller devices */
 }
 
-.text-frame h1{
-    width: 600px;
-    height: 104px;
-    font-size: 60px;
+.text-frame h1 {
+    font-size: 2.5rem; /* Adjusts for better readability */
+    line-height: 1.2;
     font-weight: 600;
-    line-height: 75px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-family: "Montserrat Alternates", sans-serif;
     color: #9C1275;
 }
 
-.text-frame p{
-    width: 650px;
-    height: 14px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
+.text-frame p {
+    font-size: 1rem;
+    line-height: 1.6;
     color: rgba(0, 0, 0, 0.55);
-    margin-top: 50px;
-    font-family: "Varela Round", sans-serif;
+    margin-top: 20px;
 }
 
-.home-page-contact-button{
-    color:#5a225f;
-    border-color: #9C1275;
-    transition: background-color;
-    transition-duration: 200ms;
+.home-page-contact-button {
+    color: #5a225f;
+    border: 2px solid #9C1275;
     cursor: pointer;
     background: transparent;
     height: 50px;
     width: 200px;
-    left: 181px;
-    margin-top: 95px;
+    margin-top: 20px;
     border-radius: 10px;
-    padding: 8px 16px 8px 16px;
-    font-size: larger;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1rem;
+    transition: background-color 0.2s;
 }
 
-.side-image{
-    margin-top: 80px;
-    width: 40%;
-    right: 250px;
-    margin-right: 50px;
-
-
+.home-page-contact-button:hover {
+    background-color: #9C1275;
+    color: #ffffff;
 }
 
-.side-image img{
+.side-image {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.side-image img {
     width: 100%;
-    height: 450px;
+    height: auto; /* Ensures the image scales proportionally */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home-page-main-frame {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center;
+    }
+
+    .text-frame, .side-image {
+        margin: 10px 0;
+    }
+
+    .text-frame h1 {
+        font-size: 2rem;
+    }
+
+    .text-frame p {
+        font-size: 0.9rem;
+    }
+
+    .home-page-contact-button {
+        width: 80%; /* Adjust button width for smaller screens */
+    }
 }
