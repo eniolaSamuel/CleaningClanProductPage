@@ -1,7 +1,5 @@
 import "../styles/HomePage.css"
 import CLEANINGPERSONS from "../assets/svg/cleaning-personel.svg"
-import NavBar from "./NavBar";
-import {ContactUs} from "./Contact";
 import React from "react";
 
 const HomePage = () =>{
