@@ -10,43 +10,95 @@
 
 .bubble-container {
     width: 100%;
-    height: 200px;
+    height: auto; /* Adjust height to fit content */
     margin-bottom: 150px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap; /* Allows bubbles to wrap on smaller screens */
+    gap: 20px; /* Space between bubbles */
+    padding: 20px; /* Add padding to prevent content from touching edges */
 }
 
 .individual-bubble {
     position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: #ecebeb; /* Light blue color */
+    width: 15vw; /* Relative to viewport width for responsiveness */
+    height: 15vw; /* Maintain aspect ratio */
+    max-width: 150px; /* Prevent bubbles from getting too large */
+    max-height: 150px;
+    background-color: #ecebeb;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
     animation: bounce 2s infinite alternate;
-    margin-top: 200px;
 }
 
 @keyframes bounce {
     0% {
         transform: translateY(0);
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Shadow effect */
     }
     50% {
-        transform: translateY(-10px); /* Adjust the bounce height as needed */
-        filter: none; /* Remove shadow */
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Shadow effect */
     }
 }
+
+/*@keyframes bounce {*/
+/*    0% {*/
+/*        transform: translateY(0);*/
+/*        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); !* Shadow effect *!*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(-10px); !* Adjust the bounce height as needed *!*/
+/*        filter: none; !* Remove shadow *!*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); !* Shadow effect *!*/
+/*    }*/
+/*}*/
+
+.individual-bubble:hover {
+    transform: scale(1.1); /* Slightly enlarge bubble on hover */
+    background-color: #2d1231;
+}
+
+
+.individual-bubble p {
+    font-size: 1rem; /* Adjust font size for better readability */
+}
+
+/*.bubble-container {*/
+/*    width: 100%;*/
+/*    height: 200px;*/
+/*    margin-bottom: 150px;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.individual-bubble {*/
+/*    position: relative;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    background-color: #ecebeb; !* Light blue color *!*/
+/*    border-radius: 50%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);*/
+/*    animation: bounce 2s infinite alternate;*/
+/*    margin-top: 200px;*/
+/*}*/
+
 
 /* Adjust animation duration for each bubble */
 .individual-bubble:nth-child(odd) {
@@ -115,9 +167,7 @@
     transform: rotate(330deg);
 }
 
-.individual-bubble:hover {
-    background-color: #2d1231; /* Darker blue color on hover */
-}
+
 
 .individual-bubble p {
     position: absolute;
