@@ -227,23 +227,39 @@
     margin-bottom: 40px;
 }
 
+/*.service-modal {*/
+/*    position: absolute;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    top: 60%;*/
+/*    left: 50%;*/
+/*    right: auto;*/
+/*    bottom: auto;*/
+/*    margin-right: auto;*/
+/*    transform: translate(-50%, -50%);*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    outline: none;*/
+/*    background-image: url("../assets/svg/serviceBackgound.svg");*/
+/*    width: 40%;*/
+/*    height: 120%;*/
+/*    backdrop-filter: blur(15px)!important;*/
+/*}*/
 .service-modal {
     position: absolute;
-    align-content: center;
-    justify-content: center;
-    top: 60%;
+    top: 50%;
     left: 50%;
-    right: auto;
-    bottom: auto;
-    margin-right: auto;
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 10px;
     outline: none;
     background-image: url("../assets/svg/serviceBackgound.svg");
-    width: 40%;
-    height: 120%;
-    backdrop-filter: blur(15px)!important;
+    width: 90%; /* Set width to a percentage for responsiveness */
+    max-width: 500px; /* Limit the max width */
+    height: auto; /* Allow height to adjust to content */
+    max-height: 90%; /* Prevent modal from exceeding viewport height */
+    overflow-y: auto; /* Enable scrolling for overflow content */
+    backdrop-filter: blur(15px);
 }
 
 .service-modal-overlay {
@@ -259,31 +275,91 @@
 }
 
 .blurred {
-    filter: blur(50px);
+    filter: blur(150px);
 }
 
-.popped-bubble{
-    width: 46%;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    padding-bottom: 140px;
-    padding-left: 38px;
-}
+/*.popped-bubble{*/
+/*    width: fit-content;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*    margin: auto;*/
+/*    padding-bottom: 140px;*/
+/*    padding-left: 38px;*/
+/*}*/
 .modal-close-button{
 
 }
 
 .popped-bubble-content h2{
-    width: 250px;
+    /*width: 250px;*/
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 20px;
-    margin-bottom: -5px;
+    font-size: 1.5rem;
+    text-align: center;
+    /*font-size: 20px;*/
+    /*margin-bottom: -5px;*/
     color: #9C1275;
 }
+/*.popped-bubble-content h2 {*/
+/*    font-size: 1.5rem; !* Use rem for scalable font sizes *!*/
+/*    text-align: center; !* Center text for better readability *!*/
+/*    color: #9C1275;*/
+/*}*/
 
-.popped-bubble-content p{
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 10px;
+.popped-bubble-content p {
+    font-size: 1rem; /* Ensure consistent scaling across devices */
     color: #9C1275;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/*.popped-bubble-content p{*/
+/*    font-family: "Montserrat Alternates", sans-serif;*/
+/*    font-size: 10px;*/
+/*    color: #9C1275;*/
+/*}*/
+
+@media (max-width: 768px) {
+    .service-modal {
+        width: 95%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .popped-bubble-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .popped-bubble-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-modal {
+        width: 100%;
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    .popped-bubble-content h2 {
+        font-size: 1rem;
+    }
+
+    .popped-bubble-content p {
+        font-size: 0.8rem;
+    }
+}
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-close-button img {
+    width: 24px;
+    height: 24px;
 }
