@@ -11,7 +11,8 @@
 .bubble-container {
     width: 100%;
     height: auto; /* Adjust height to fit content */
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -69,10 +70,6 @@
     background-color: #2d1231;
 }
 
-
-.individual-bubble p {
-    font-size: 1rem; /* Adjust font size for better readability */
-}
 
 /*.bubble-container {*/
 /*    width: 100%;*/
@@ -169,15 +166,19 @@
 
 
 
+/*.individual-bubble p {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    color: #fff; !* White text color *!*/
+/*    font-size: 14px;*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease;*/
+/*}*/
+
 .individual-bubble p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* White text color */
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    font-size: 1rem; /* Adjust font size for better readability */
 }
 
 .individual-bubble:hover p {
